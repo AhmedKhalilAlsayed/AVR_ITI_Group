@@ -3,7 +3,6 @@
 
 void main(void){
 	
-	/* day1 6-7-25 labs: swap, get/set bit */
 	// test print function
 	/*
 	int num = 1000;
