@@ -1,12 +1,22 @@
 #include <stdio.h>
 #include "stdtypes.h"
 
+u8 count(){
+	//u8 sum = 0; // stored in stack section
+	static u8 sum = 0; // stored in .data section
+	sum++;
+	return sum;
+}
 
-extern double pi;
 
 void main(){
 	
-	printf("%f", pi);
+	printf("%d\n", count());
+	printf("%d\n", count());
+	printf("%d\n", count());
+	
+	
+	
 	
 	
 }
