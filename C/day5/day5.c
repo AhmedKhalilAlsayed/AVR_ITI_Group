@@ -1,16 +1,35 @@
 #include <stdio.h>
 
+// for machine A: char 2B, int 4B
+/*typedef char u16;
+typedef int u32;
+*/
+// for machine B: char 1B, int 2B
+typedef int u16;
+typedef long int u32;
+
+
+/*A: char 2B, int 4B */
+/*B: char 1B, int 2B */
 
 void main(){
 	
-	printf("%d\n", sizeof(int));
-	printf("%d\n", sizeof(short int));
-	printf("%d\n", sizeof(long int));
-	printf("%d\n\n", sizeof(long long int));
+	// Software
+	u16 num; // max= 65000; 
+	u16 num; // max= 65000;
+	u16 num; // max= 65000;
+	u16 num; // max= 65000;
+	u16 num; // max= 65000;
+	u16 num; // max= 65000;
 	
-	printf("%d\n", sizeof(double));
-	printf("%d\n", sizeof(long double));
+	/* logic */
 	
+	u32 salary; // max=4000000000000 
+	u32 salary; // max=4000000000000
+	u32 salary; // max=4000000000000
+	u32 salary; // max=4000000000000
+	u32 salary; // max=4000000000000
+	u32 salary; // max=4000000000000
 	
 	
 }
