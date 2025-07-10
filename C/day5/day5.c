@@ -3,17 +3,14 @@
 
 void main(){
 	
+	const u8 num = 10;
 	
-	printf("%d\n", sizeof(u8)*8);
-	printf("%d\n\n", sizeof(s8)*8);
+	const u8* ptr = &num;
 	
-	printf("%d\n", sizeof(u16)*8);
-	printf("%d\n\n", sizeof(s16)*8);
+	*ptr = 5;
 	
-	printf("%d\n", sizeof(u32)*8);
-	printf("%d\n\n", sizeof(s32)*8);
 	
-	printf("%d\n", sizeof(u64)*8);
-	printf("%d\n\n", sizeof(s64)*8);
+	printf("%d", num);
+	
 	
 }
