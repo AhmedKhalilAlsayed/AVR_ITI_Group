@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include "stdtypes.h"
 
-u8 count(){
-	//u8 sum = 0; // stored in stack section
-	static u8 sum = 0; // stored in .data section
-	sum++;
-	return sum;
-}
-
 
 void main(){
 	
-	printf("%d\n", count());
-	printf("%d\n", count());
-	printf("%d\n", count());
+	for(int i=0;i<3;i++){
+		int sum = 0;
+		sum++;
+		printf("normal sum %d\n",sum);
+	}
 	
+	printf("\n");
+	
+	for(int i=0;i<3;i++){
+		static int sums = 0;
+		sums++;
+		printf("static sum %d\n",sums);
+	}
 	
 	
 	
