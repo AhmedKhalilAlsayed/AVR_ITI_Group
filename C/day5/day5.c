@@ -1,36 +1,32 @@
 #include <stdio.h>
 
-// for machine A: char 2B, int 4B
-/*typedef char u16;
-typedef int u32;
-*/
-// for machine B: char 1B, int 2B
-typedef int u16;
-typedef long int u32;
+// 1B
+typedef unsigned char u8;
+typedef signed char s8; 
+// 2B
+typedef unsigned short int u16;
+typedef signed short int s16;
+// 4B
+typedef unsigned int u32;
+typedef signed int s32;
+// 8B
+typedef unsigned long int u64;
+typedef signed long int s64;
 
-
-/*A: char 2B, int 4B */
-/*B: char 1B, int 2B */
 
 void main(){
 	
-	// Software
-	u16 num; // max= 65000; 
-	u16 num; // max= 65000;
-	u16 num; // max= 65000;
-	u16 num; // max= 65000;
-	u16 num; // max= 65000;
-	u16 num; // max= 65000;
 	
-	/* logic */
+	printf("%d\n", sizeof(u8)*8);
+	printf("%d\n\n", sizeof(s8)*8);
 	
-	u32 salary; // max=4000000000000 
-	u32 salary; // max=4000000000000
-	u32 salary; // max=4000000000000
-	u32 salary; // max=4000000000000
-	u32 salary; // max=4000000000000
-	u32 salary; // max=4000000000000
+	printf("%d\n", sizeof(u16)*8);
+	printf("%d\n\n", sizeof(s16)*8);
 	
+	printf("%d\n", sizeof(u32)*8);
+	printf("%d\n\n", sizeof(s32)*8);
+	
+	printf("%d\n", sizeof(u64)*8);
+	printf("%d\n\n", sizeof(s64)*8);
 	
 }
-
