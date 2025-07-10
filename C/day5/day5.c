@@ -1,18 +1,5 @@
 #include <stdio.h>
-
-// 1B
-typedef unsigned char u8;
-typedef signed char s8; 
-// 2B
-typedef unsigned short int u16;
-typedef signed short int s16;
-// 4B
-typedef unsigned int u32;
-typedef signed int s32;
-// 8B
-typedef unsigned long int u64;
-typedef signed long int s64;
-
+#include "stdtypes.h"
 
 void main(){
 	
