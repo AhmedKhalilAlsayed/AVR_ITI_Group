@@ -1,24 +1,31 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "stdtypes.h"
 
 
-typedef struct Employee{
-	u8 name[15];
-	u32 salary;
-	u8 bonus;
-}Employee;
+
+typedef struct Student{
+	u8 id;
+	u8 grade;
+	
+}Student;
+
 
 void main(void){
-	Employee ahmed;
+	Student class[10];
 	
-	Employee* strPtr = &ahmed;
+	for(u8 i=0;i<10;i++){
+		class[i].id = i;
+		class[i].grade = rand()%50;
+	}
 	
-	//(*strPtr).salary= 1000;
-	strPtr->salary= 1000;
 	
 	
 	
-	printf("%d", ahmed.salary);
-	
+	// echo
+	for(u8 i=0;i<10;i++){
+		printf("C[%d].id = %d, C[%d].grade = %d\n",i,class[i].id,i, class[i].grade);
+		
+	}
 	
 }
