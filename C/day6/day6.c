@@ -2,16 +2,11 @@
 #include "stdtypes.h"
 
 
-typedef struct Employee{
+struct Employee{
 	u8 name[15];
 	u32 salary;
 	u8 bonus;
-}Employee;
-
-
-
-
-
+};
 
 void main(void){
 	struct Employee arr[3];
@@ -35,8 +30,15 @@ void main(void){
 	// echo, printf array data
 	
 	
-	
+	for(u8 i=0;i<3;i++){
+		printf("%s", arr[i].name);
+		printf("\n");
+		printf("%d", arr[i].salary);
+		printf("\n");
+		printf("%d", arr[i].bonus);
+		printf("\n");
+		
+	}
 	
 	
 }
-
