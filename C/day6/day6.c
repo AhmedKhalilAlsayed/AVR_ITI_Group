@@ -5,27 +5,15 @@
 
 
 typedef struct Student{
-	u8 id;
-	u8 grade;
-	
+	u8 x;
+	u16 z;
+	u32 y;
 }Student;
 
 
 void main(void){
-	Student class[10];
+	Student s;
+	printf("%d", sizeof(s));
 	
-	for(u8 i=0;i<10;i++){
-		class[i].id = i;
-		class[i].grade = rand()%50;
-	}
-	
-	
-	
-	
-	// echo
-	for(u8 i=0;i<10;i++){
-		printf("C[%d].id = %d, C[%d].grade = %d\n",i,class[i].id,i, class[i].grade);
-		
-	}
 	
 }
