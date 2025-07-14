@@ -28,4 +28,6 @@ void main(void){
 	
 	printf("in bits = %d%d%d%d %d%d%d%d\n", motorControl.b7, motorControl.b6, motorControl.b5,motorControl.b4,motorControl.b3,motorControl.b2,motorControl.b1,motorControl.b0);
 	
+	
+	printf("sizeof %d", sizeof(motorControl));
 }
